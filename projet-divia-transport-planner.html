@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Projet - Boirlpy</title>
+  <title>Projet - Divia Transport Planner</title>
   <meta name="description"
-    content="Boilrpy est un outil Python qui génère des boilerplates de projets pour accélérer le prototypage et la mise en place d'applications.">
-  <meta name="keywords" content="Python, boilerplate, generator, prototyping, productivity, project setup, boilrpy">
+    content="Divia Transport Planner est une application Python qui aide les usagers à planifier leurs trajets en transport public à Dijon, en exploitant les données ouvertes de Divia.">
+  <meta name="keywords"
+    content="transport, Dijon, Divia, Python, open data, planification, mobilité, trajets, bus, tram">
+
 
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" rel="icon">
@@ -44,11 +46,11 @@
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Projet Boirlpy</h1>
+        <h1 class="mb-2 mb-lg-0">Projet Divia Transport Planner</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Accueil</a></li>
-            <li class="current">Projet Boirlpy</li>
+            <li class="current">Projet Divia Transport Planner</li>
           </ol>
         </nav>
       </div>
@@ -63,12 +65,12 @@
         </button>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
           <li>
-            <a class="dropdown-item d-flex align-items-center" href="projet-boilrpy.html">
+            <a class="dropdown-item d-flex align-items-center" href="projet-divia-transport-planner.html">
               <img src="https://flagcdn.com/fr.svg" width="24" alt="Français" class="me-2"> Français
             </a>
           </li>
           <li>
-            <a class="dropdown-item d-flex align-items-center" href="project-boilrpy.html">
+            <a class="dropdown-item d-flex align-items-center" href="project-divia-transport-planner.html">
               <img src="https://flagcdn.com/gb.svg" width="24" alt="English" class="me-2"> English
             </a>
           </li>
@@ -113,18 +115,16 @@
                   </script>
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img src="assets/img/portfolio/boilrpy.webp" alt="Portfolio Image" class="img-fluid">
+                      <img src="assets/img/portfolio/divia-project.webp" alt="Portfolio Image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
-                      <img src="assets/img/portfolio/boilrpy-pypi.webp" alt="Portfolio Image" class="img-fluid">
+                      <img src="assets/img/portfolio/divia-home.webp" alt="Portfolio Image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
-                      <video class="img-fluid" controls>
-                        <source
-                          src="https://raw.githubusercontent.com/tabodino/boilrpy/main/docs/assets/demo-boilrpy.mp4"
-                          type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
+                      <img src="assets/img/portfolio/divia-itinerary.webp" alt="Portfolio Image" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/divia-chatbot.webp" alt="Portfolio Image" class="img-fluid">
                     </div>
                   </div>
                   <div class="swiper-button-prev"></div>
@@ -135,27 +135,30 @@
               <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
                 <div class="row g-2 mt-3">
                   <div class="col-3">
-                    <img src="assets/img/portfolio/boilrpy.webp" alt="App Screenshot Image" class="img-fluid glightbox">
-                  </div>
-                  <div class="col-3">
-                    <img src="assets/img/portfolio/boilrpy-pypi.webp" alt="App Screenshot Image"
+                    <img src="assets/img/portfolio/divia-project.webp" alt="App Screenshot Image"
                       class="img-fluid glightbox">
                   </div>
                   <div class="col-3">
-                    <img src="assets/img/portfolio/boilrpy-demo.webp" alt="App Screenshot Image"
+                    <img src="assets/img/portfolio/divia-home.webp" alt="Accueil de l'application"
                       class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/divia-itinerary.webp" alt="Itinéraire avec NetworkX"
+                      class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/divia-chatbot.webp" alt="Chatbot Gradio" class="img-fluid glightbox">
                   </div>
                 </div>
               </div>
 
               <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
                 <span>Python</span>
-                <span>Flask</span>
-                <span>Docker</span>
-                <span>Pylint</span>
-                <span>Poetry</span>
-                <span>Pytest</span>
-                <span>Git</span>
+                <span>FastAPI</span>
+                <span>NetworkX</span>
+                <span>GTFS</span>
+                <span>Gradio</span>
+                <span>HuggingFace</span>
               </div>
             </div>
           </div>
@@ -164,56 +167,51 @@
             <div class="portfolio-details-content">
               <div class="project-meta">
                 <div class="badge-wrapper">
-                  <span class="project-badge">Python</span>
+                  <span class="project-badge">Graph - NetworkX</span>
                 </div>
                 <div class="date-client">
                   <div class="meta-item">
                     <i class="bi bi-calendar-check"></i>
-                    <span>Janvier 2025</span>
+                    <span>Octobre 2025</span>
                   </div>
                 </div>
               </div>
 
-              <h2 class="project-title">Boirlpy</h2>
+              <h2 class="project-title">Divia Transport Planner</h2>
 
               <div class="project-website">
                 <i class="bi bi-link-45deg"></i>
-                <a href="https://pypi.org/project/boilrpy/" target="_blank">Voir sur PyPI</a>
+                <a href="https://huggingface.co/spaces/tabodino/divia-transport-planner" target="_blank">Accéder à la
+                  démo</a>
               </div>
 
               <div class="project-overview">
                 <p class="lead">
-                  Le projet Boilrpy repose sur une architecture moderne et modulaire, conçue pour accélérer la mise en
-                  place de projets Python. L'application fournit des boilerplates générés automatiquement, permettant de
-                  démarrer rapidement avec une structure claire et maintenable. Elle s'appuie sur des outils standards
-                  de l'écosystème Python (gestion des dépendances, tests, linting, conteneurisation) afin de garantir la
-                  qualité du code et la reproductibilité des environnements. Cette séparation nette entre la logique
-                  métier, la configuration et la couche de présentation facilite la maintenabilité, l'évolution et
-                  l'intégration de nouvelles fonctionnalités.
+                  Le projet Divia Transport Planner repose sur une architecture simple et efficace, conçue pour
+                  exploiter les données ouvertes du réseau Divia à Dijon.
+                  L'application interroge les API publiques pour récupérer les horaires et itinéraires, puis les traite
+                  avec Python et Pandas afin de proposer des trajets optimisés.
+                  L'interface offre une expérience interactive et accessible aux usagers.
+                  Cette séparation claire entre la collecte des données, la logique métier et la présentation facilite
+                  la maintenabilité et l'évolution du projet.
                 </p>
                 <p class="lead">
                   Architecture
                 <ul class="lead">
-                  <li>
-                    <strong>Python :</strong> langage principal utilisé pour la génération et l'organisation des
-                    boilerplates.
-                  </li>
-                  <li>
-                    <strong>Flask :</strong>framework léger pour créer des APIs ou des prototypes web intégrés aux
-                    boilerplates.
-                  </li>
-                  <li>
-                    <strong>Pylint :</strong> outil de linting et de contrôle qualité du code, intégré dans les
-                    boilerplates.
-                  </li>
-                  <li>
-                    <strong>Pytest :</strong> framework de tests unitaires et fonctionnels pour garantir la fiabilité du
-                    code généré.
-                  </li>
-                  <li><strong>Git :</strong> gestion de version et collaboration, permettant de suivre l'évolution des
-                    boilerplates et de travailler en équipe.</li>
+                  <li><strong>Python :</strong> langage principal pour la collecte et le traitement des données.</li>
+                  <li><strong>NetworkX :</strong> bibliothèque pour la modélisation et l'analyse de graphes, utilisée
+                    pour optimiser les trajets.</li>
+                  <li><strong>Gradio :</strong> interface web interactive permettant de tester et déployer rapidement
+                    des modèles et fonctionnalités.</li>
+                  <li><strong>Hugging Face :</strong> intégration de modèles pré-entraînés pour enrichir l'application
+                    avec des capacités avancées d'IA.</li>
+                  <li><strong>GTFS :</strong> format standard de données de transport public, utilisé pour importer et
+                    exploiter les horaires et itinéraires.</li>
+                  <li><strong>FastAPI :</strong> framework haute performance pour la création d'API RESTful, permettant
+                    l'intégration avec des services externes et un déploiement évolutif.</li>
                 </ul>
                 </p>
+
 
                 <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
                   <div class="accordion-item" data-aos="fade-up">
@@ -226,12 +224,16 @@
                     <div id="portfolio-details-collapse-1" class="accordion-collapse collapse show"
                       data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p><strong>Boilrpy</strong> est une librairie Python conçue pour générer rapidement des
-                          boilerplates de projets.
-                          Elle simplifie la création de squelettes applicatifs, en offrant une structure claire et prête
-                          à l'emploi.
-                          L'objectif est d'accélérer le prototypage et de réduire le temps consacré aux tâches
-                          répétitives de configuration.</p>
+                        <p><strong>Divia Transport Planner</strong> est une application Python conçue pour aider les
+                          usagers à planifier leurs trajets en transport public à Dijon.
+                          Elle simplifie la recherche d'horaires et d'itinéraires en exploitant directement les données
+                          ouvertes de Divia.
+                          L'application intègre également un <strong>chatbot</strong> capable de répondre aux questions
+                          fréquentes des usagers,
+                          afin de rendre l'expérience plus interactive et accessible.
+                          L'objectif est de faciliter la mobilité urbaine et d'améliorer l'accompagnement des voyageurs
+                          grâce à une interface claire et intelligente.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -247,10 +249,12 @@
                     <div id="portfolio-details-collapse-2" class="accordion-collapse collapse"
                       data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p>Mettre en place un nouveau projet Python peut être chronophage : configuration initiale,
-                          organisation des fichiers, dépendances de base.
-                          Le défi était de fournir un outil simple et flexible qui automatise ces étapes, afin que les
-                          développeurs puissent se concentrer sur la logique métier.</p>
+                        <p>De nombreux usagers rencontrent des difficultés pour trouver rapidement les meilleurs trajets
+                          ou horaires en transport public.
+                          Les outils existants sont parfois complexes ou peu adaptés aux besoins quotidiens.
+                          Le défi était donc de concevoir une solution simple et intelligente, capable de guider les
+                          utilisateurs vers les trajets les plus pertinents.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -266,12 +270,13 @@
                     <div id="portfolio-details-collapse-3" class="accordion-collapse collapse"
                       data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p class="lead">Le projet Boilrpy propose :
+                        <p class="lead">Le projet propose :
                         <ul class="lead">
-                          <li>Un générateur de boilerplates Python personnalisables.
-                          <li>Une structure de projet claire et modulaire.</li>
-                          <li>Un gain de temps significatif pour le prototypage et le développement rapide.</li>
-                          <li>Une approche open source, facile à étendre et à adapter.</li>
+                          <li>Un accès simplifié aux données ouvertes du réseau Divia.</li>
+                          <li>Une modélisation et optimisation des trajets grâce à l'utilisation de graphes et de la
+                            bibliothèque NetworkX.</li>
+                          <li>Une interface interactive avec un chatbot intégré.</li>
+                          <li>Une solution évolutive et adaptable aux besoins des usagers.</li>
                         </ul>
                         </p>
                       </div>
@@ -283,31 +288,26 @@
               <div class="project-features" data-aos="fade-up" data-aos-delay="300">
                 <h3><i class="bi bi-stars"></i> Caractéristiques principales</h3>
                 <div class="row g-3">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <ul class="feature-list">
-
-                      <li><i class="bi bi-check2-circle"></i> Personnalisable</li>
-                      <li><i class="bi bi-check2-circle"></i> Gain de temps</li>
-                      <li><i class="bi bi-check2-circle"></i> Open source et collaboratif </li>
-                    </ul>
-                  </div>
-                  <div class="col-md-6">
-                    <ul class="feature-list">
-                      <li><i class="bi bi-check2-circle"></i> Support de Poetry</li>
-                      <li><i class="bi bi-check2-circle"></i> Intégration Flask</li>
-                      <li><i class="bi bi-check2-circle"></i> Prêt pour Git</li>
+                      <li><i class="bi bi-check2-circle"></i> Exploitation des données ouvertes Divia (GTFS)</li>
+                      <li><i class="bi bi-check2-circle"></i> Optimisation des trajets avec graphes et NetworkX</li>
+                      <li><i class="bi bi-check2-circle"></i> Interface interactive avec Gradio ou Streamlit</li>
+                      <li><i class="bi bi-check2-circle"></i> Intégration d'un chatbot pour les questions fréquentes des
+                        usagers</li>
+                      <li><i class="bi bi-check2-circle"></i> Utilisation de FastAPI pour exposer des APIs RESTful</li>
+                      <li><i class="bi bi-check2-circle"></i> Extensible avec Hugging Face pour enrichir l'IA</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
               <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
-                <a href="https://pypi.org/project/boilrpy/" class="btn-view-project" target="_blank">Voir sur PyPI
+                <a href="https://huggingface.co/spaces/tabodino/divia-transport-planner" class="btn-view-project"
+                  target="_blank">Démo
                   <i class="bi bi-box-arrow-up-right"></i></a>
-                <a href="https://medium.com/@tabodino/boilrpy-un-boilerplate-en-python-e9b07160b89b"
-                  class="btn-next-project" target="_blank">Lire
-                  l'article Medium<i class="bi bi-medium"></i></a>
-                <a href="https://github.com/tabodino/boirlpy/" class="btn-next-project" target="_blank">Voir
+                <a href="https://github.com/tabodino/divia-transport-planner/" class="btn-next-project"
+                  target="_blank">Voir
                   le repository<i class="bi bi-github"></i></a>
               </div>
             </div>
