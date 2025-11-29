@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Projet - Hotel Booking Cancellation Prediction</title>
+  <title>Projet - Compagnon Immo</title>
   <meta name="description"
-    content="Projet de machine learning en Python pour prédire les annulations de réservations hôtelières. Utilisation de Pandas, Scikit-learn, PySpark, MLflow et visualisations pour optimiser la gestion hôtelière.">
+    content="Application d'aide à la décision pour acheteurs de logements : comparaison de territoires (prix, démographie, transports, services, éducation, criminalité, économie), data visualization, classements, prédiction de l'évolution des prix et estimation du prix au m2.">
   <meta name="keywords"
-    content="Hotel Booking, Cancellation Prediction, Machine Learning, Python, Pandas, Scikit-learn, PySpark, MLflow, Data Science, Tourisme, IA">
+    content="Immobilier, Comparaison de territoires, Data Visualization, Prix au m2, Prédiction des prix, Démographie, Transports, Services publics, Éducation, Criminalité, Économie, Python, Pandas, Scikit-learn, Streamlit, GeoData">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" rel="icon">
@@ -45,11 +45,11 @@
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Projet Hotel Booking Cancellation Prediction</h1>
+        <h1 class="mb-2 mb-lg-0">Projet Compagnon Immo</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Accueil</a></li>
-            <li class="current">Projet Hotel Booking Cancellation Prediction</li>
+            <li class="current">Projet Compagnon Immo</li>
           </ol>
         </nav>
       </div>
@@ -64,13 +64,12 @@
         </button>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
           <li>
-            <a class="dropdown-item d-flex align-items-center" href="projet-hotel-booking-cancellation-prediction.html">
+            <a class="dropdown-item d-flex align-items-center" href="projet-compagnon-immo.html">
               <img src="https://flagcdn.com/fr.svg" width="24" alt="Français" class="me-2"> Français
             </a>
           </li>
           <li>
-            <a class="dropdown-item d-flex align-items-center"
-              href="project-hotel-booking-cancellation-prediction.html">
+            <a class="dropdown-item d-flex align-items-center" href="project-compagnon-immo.html">
               <img src="https://flagcdn.com/gb.svg" width="24" alt="English" class="me-2"> English
             </a>
           </li>
@@ -115,16 +114,17 @@
                   </script>
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img src="assets/img/portfolio/hotel-revenue-2024.webp" alt="Portfolio Image" class="img-fluid">
+                      <img src="assets/img/portfolio/compagnon-immo.webp" alt="Portfolio Image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
-                      <img src="assets/img/portfolio/hotel-dashboard.webp" alt="Portfolio Image" class="img-fluid">
+                      <img src="assets/img/portfolio/compagnon-immo-home.webp" alt="Portfolio Image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
-                      <img src="assets/img/portfolio/hotel-business-keys.webp" alt="Portfolio Image" class="img-fluid">
+                      <img src="assets/img/portfolio/compagnon-immo-analysis.webp" alt="Portfolio Image"
+                        class="img-fluid">
                     </div>
                     <div class="swiper-slide">
-                      <img src="assets/img/portfolio/hotel-recommandations.webp" alt="Portfolio Image"
+                      <img src="assets/img/portfolio/compagnon-immo-modelisation.webp" alt="Portfolio Image"
                         class="img-fluid">
                     </div>
                   </div>
@@ -136,18 +136,19 @@
               <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
                 <div class="row g-2 mt-3">
                   <div class="col-3">
-                    <img src="assets/img/portfolio/hotel-revenue-2024.webp" alt="App Screenshot Image"
+                    <img src="assets/img/portfolio/compagnon-immo.webp" alt="App Screenshot Image"
                       class="img-fluid glightbox">
                   </div>
                   <div class="col-3">
-                    <img src="assets/img/portfolio/hotel-dashboard.webp" alt="Dashboard" class="img-fluid glightbox">
-                  </div>
-                  <div class="col-3">
-                    <img src="assets/img/portfolio/hotel-business-keys.webp" alt="Business Key Indicators"
+                    <img src="assets/img/portfolio/compagnon-immo-home.webp" alt="Dashboard"
                       class="img-fluid glightbox">
                   </div>
                   <div class="col-3">
-                    <img src="assets/img/portfolio/hotel-recommandations.webp" alt="Recommandations"
+                    <img src="assets/img/portfolio/compagnon-immo-analysis.webp" alt="Analysis"
+                      class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/compagnon-immo-modelisation.webp" alt="Modelisation"
                       class="img-fluid glightbox">
                   </div>
                 </div>
@@ -155,10 +156,14 @@
 
               <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
                 <span>Python</span>
-                <span>PySpark</span>
-                <span>MLFlow</span>
-                <span>Jupyter Notebook</span>
                 <span>Pandas</span>
+                <span>Scikit-learn</span>
+                <span>Jupyter Notebook</span>
+                <span>Matplotlib</span>
+                <span>Seaborn</span>
+                <span>Plotly</span>
+                <span>ARIMA / Prophet</span>
+                <span>SHAP</span>
               </div>
             </div>
           </div>
@@ -167,53 +172,50 @@
             <div class="portfolio-details-content">
               <div class="project-meta">
                 <div class="badge-wrapper">
-                  <span class="project-badge">Python - PySpark</span>
+                  <span class="project-badge">Machine Learning</span>
                 </div>
                 <div class="date-client">
                   <div class="meta-item">
                     <i class="bi bi-calendar-check"></i>
-                    <span>Août 2025</span>
+                    <span>Avril 2025</span>
                   </div>
                 </div>
               </div>
 
-              <h2 class="project-title">Hotel Booking Cancellation Prediction</h2>
+              <h2 class="project-title">Compagnon Immo</h2>
 
               <div class="project-website">
                 <i class="bi bi-link-45deg"></i>
-                <a href="https://tabodino.github.io/hotel_booking_cancellation_prediction/" target="_blank">Accéder à la
+                <a href="https://tabodino-compagnon-immo-srcstreamlitapp-aqmvu5.streamlit.app/" target="_blank">Accéder
+                  à la
                   démo</a>
               </div>
 
               <div class="project-overview">
-                <p class="lead">
-                  Le projet <strong>Hotel Booking Cancellation Prediction</strong> repose sur une architecture claire et
-                  évolutive,
-                  conçue pour transformer les données de réservation hôtelière en indicateurs exploitables.
-                  Les données sont collectées et nettoyées avec <strong>Pandas</strong>, puis enrichies par des
-                  visualisations
-                  interactives (<strong>Matplotlib</strong>, <strong>Seaborn</strong>, <strong>Plotly</strong>) afin de
-                  mettre en
-                  évidence les tendances clés : canaux de réservation, profils clients, saisonnalité et impact financier
-                  des annulations.
-                  La logique métier est assurée par des modèles de <strong>machine learning</strong> entraînés avec
-                  <strong>Scikit-learn</strong>, tandis que <strong>MLflow</strong> garantit le suivi des expériences et
-                  la
-                  reproductibilité des résultats.
+                <p class="lead"><strong>Consigne :</strong>
+                  Développer une solution permettant aux acheteurs de logements d'explorer et de comparer différents
+                  territoires en termes de prix de l'immobilier, démographie, transports, services, éducation,
+                  criminalité, et économie.
+                  L'application doit offrir une Data Visualization, permettant aux utilisateurs d'établir des
+                  classements et de visualiser les forces et faiblesses relatives des territoires.
+
+                  L'objectif global est d'aider les acheteurs à prendre des décisions éclairées en traduisant des
+                  données complexes et nombreuses en informations utiles et accessibles.
                 </p>
                 <p class="lead">
                   Architecture
                 <ul class="lead">
                   <li><strong>Python :</strong> langage principal pour la collecte et le traitement des données.</li>
-                  <li><strong>Pandas :</strong> manipulation et nettoyage des données de réservation.</li>
-                  <li><strong>Scikit-learn :</strong> entraînement et évaluation des modèles de machine learning.</li>
-                  <li><strong>Matplotlib & Seaborn :</strong> visualisation des tendances et des métriques.</li>
+                  <li><strong>Pandas :</strong> manipulation et nettoyage des données.</li>
+                  <li><strong>Scikit-learn :</strong> régression et modèles pour estimation de prix au m².</li>
+                  <li><strong>Time series :</strong> modèles d'évolution (ex. régression réguliarisée, ARIMA/Prophet,
+                    LSTM)
+                  <li><strong>Matplotlib, Seaborn, Plotly :</strong> visualisation des tendances et des métriques.</li>
                   <li><strong>Jupyter Notebook :</strong> environnement interactif pour l'exploration et la
                     documentation des analyses.</li>
-                  <li><strong>MLflow :</strong> suivi des expériences et gestion des modèles.</li>
-                  <li><strong>PySpark :</strong> même si le dataset est relativement petit, l'utilisation de PySpark
-                    permet de manipuler cette librairie distribuée et de montrer sa maîtrise pour des cas futurs à
-                    grande échelle.</li>
+                  <li><strong>Interface :</strong> Streamlit pour un <strong>dashboard</strong> accessible.
+                  </li>
+                  <li><strong>ETL:</strong> normalisation des sources (INSEE, DVF, OpenData)</li>
                 </ul>
                 </p>
 
@@ -228,12 +230,33 @@
                     <div id="portfolio-details-collapse-1" class="accordion-collapse collapse show"
                       data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p>
-                          <strong>Hotel Booking Cancellation Prediction</strong> est une application Python conçue pour
-                          analyser
-                          les données de réservation hôtelière et prédire la probabilité d'annulation.
-                          L'objectif est d'aider les établissements à mieux gérer leurs ressources et optimiser leur
-                          taux d'occupation.
+                        <p class="lead">
+                          <strong>Compagnon Immo</strong> est un projet académique réalisé dans le cadre de ma formation
+                          Data Scientist,
+                          en tant que <strong>projet fil rouge</strong>.
+                          L'objectif est de développer une solution permettant aux acheteurs de logements d'explorer et
+                          de comparer différents
+                          territoires en termes de prix de l'immobilier, démographie, transports, services et économie.
+                          L'application propose une <strong>Data Visualization</strong> interactive, permettant
+                          d'établir des classements et
+                          de visualiser les forces et faiblesses relatives des territoires.
+                        </p>
+                        <p class="lead">
+                          Deux objectifs principaux sont considérés :
+                        <ul class="lead">
+                          <li><strong>Prédire l'évolution du prix des logements</strong> selon les territoires.</li>
+                          <li><strong>Estimer le prix au m² d'un logement donné</strong>, avec une première prédiction
+                            basée sur les données tabulaires,
+                            enrichie par des informations issues de l'annonce (texte descriptif, photos du logement).
+                          </li>
+                        </ul>
+                        </p>
+                        <p class="lead">
+                          Ce projet peut présenter certaines imperfections, liées à la montée en
+                          compétence progressive durant la formation.
+                          La qualité et le rendu reflètent un apprentissage itératif, avec une volonté de mettre en
+                          pratique les outils et
+                          méthodes de la data science dans un contexte réaliste.
                         </p>
                       </div>
                     </div>
@@ -250,16 +273,14 @@
                     <div id="portfolio-details-collapse-2" class="accordion-collapse collapse"
                       data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p>Les hôtels doivent faire face à un taux élevé d'annulations de réservations, ce qui complique
-                          la gestion des
-                          ressources et entraîne des pertes financières.
-                          Les données de réservation sont souvent hétérogènes (dates, durée de séjour, type de chambre,
-                          origine du client),
-                          et il est difficile d'identifier les facteurs qui influencent réellement la probabilité
-                          d'annulation.
-                          Le défi consiste donc à transformer ces données brutes en informations exploitables pour
-                          anticiper les comportements
-                          des clients et réduire l'impact des annulations.
+                        <p class="lead">
+                          La multiplicité des critères (prix, mobilité, éducation, sécurité, emploi, services) rend la
+                          comparaison des territoires difficile pour un acheteur non spécialiste.
+                          Les sources de données sont hétérogènes (formats, granularités, périodicités), et l'agrégation
+                          fiable requiert une standardisation solide.
+                          Le défi consiste à <strong>unifier</strong> ces données, à <strong>pondérer</strong> les
+                          critères selon des préférences utilisateur, puis à <strong>exposer des indicateurs</strong>
+                          lisibles pour guider le choix.
                         </p>
                       </div>
                     </div>
@@ -276,40 +297,31 @@
                     <div id="portfolio-details-collapse-3" class="accordion-collapse collapse"
                       data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p>
-                          Le projet <strong>Hotel Booking Cancellation Prediction</strong> ne se limite pas à la
-                          création d'un modèle
-                          prédictif. Il fournit des <strong>indicateurs clés</strong> pour aider les hôtels à comprendre
-                          et anticiper
-                          les comportements des clients.
-                          Les résultats sont présentés sous forme de <strong>tableaux de bord</strong> et de
-                          <strong>visualisations</strong>
-                          permettant d'identifier :
+                        <h2>Solution</h2>
+                        <p class="lead">
+                          La solution repose sur une approche complète de <strong>data science</strong>, combinant
+                          exploration, traitement et modélisation des données.
+                          L'objectif est de transformer des données hétérogènes en <strong>indicateurs clairs</strong>
+                          et en <strong>prédictions fiables</strong> pour aider les acheteurs à comparer les territoires
+                          et estimer le prix des logements.
                         </p>
                         <ul class="lead">
-                          <li>Les <strong>taux d'annulation</strong> par canal de réservation (site direct, OTA,
-                            agences,
-                            etc.).</li>
-                          <li>Les <strong>profils clients</strong> les plus susceptibles d'annuler (origine
-                            géographique,
-                            type de séjour, durée).</li>
-                          <li>L'impact des <strong>saisons et périodes</strong> sur les annulations.</li>
-                          <li>Les <strong>indicateurs financiers moyens</strong> liés aux annulations (perte estimée,
-                            taux d'occupation).</li>
-                        </ul>
-                        <p class="lead">
-                          Même si le dataset est relativement petit, l'intégration de <strong>PySpark</strong> permet de
-                          manipuler une
-                          librairie distribuée et de démontrer la capacité à traiter des données massives dans un
-                          contexte réel.
-                          Cette approche business-oriented transforme les données en <strong>insights
-                            actionnables</strong>, permettant
-                          aux hôtels de :
-                        </p>
-                        <ul class=" lead">
-                          <li>Adapter leur stratégie de pricing et de surbooking.</li>
-                          <li>Optimiser la gestion des ressources (personnel, chambres).</li>
-                          <li>Améliorer la relation client en ciblant les segments à risque.</li>
+                          <li><strong>EDA & Visualisation :</strong> analyse exploratoire des données pour comprendre
+                            les distributions, corrélations et tendances, avec des graphiques interactifs et des cartes
+                            thématiques.</li>
+                          <li><strong>ETL :</strong> récupération, nettoyage et intégration des données issues de
+                            sources variées (prix immobiliers, démographie, transports, services, criminalité,
+                            économie).</li>
+                          <li><strong>Compréhension des données :</strong> mise en évidence des variables clés
+                            influençant le prix au m² et l'évolution des marchés locaux.</li>
+                          <li><strong>Modélisation :</strong> régression linéaire pour une première estimation des prix
+                            et de leur évolution.</li>
+                          <li><strong>Tests de modèles avancés :</strong> expérimentation avec des techniques plus
+                            complexes comme le <em>bagging</em>, le <em>stacking</em> et des approches de <strong>deep
+                              learning</strong> pour améliorer la précision.</li>
+                          <li><strong>Restitution :</strong> présentation des résultats dans un <strong>dashboard
+                              interactif</strong>, permettant aux utilisateurs de comparer les territoires et d'obtenir
+                            des insights actionnables.</li>
                         </ul>
                       </div>
                     </div>
@@ -322,27 +334,29 @@
                 <div class="row g-3">
                   <div class="col-md-6">
                     <ul class="feature-list">
-                      <li><i class="bi bi-check2-circle"></i> Dashboard interactif</li>
-                      <li><i class="bi bi-check2-circle"></i> Analyse des canaux de réservation</li>
-                      <li><i class="bi bi-check2-circle"></i> Indicateurs financiers clés</li>
+                      <li><i class="bi bi-check2-circle"></i> Streamlit - UI interactive</li>
+                      <li><i class="bi bi-check2-circle"></i> Jupyter Notebook - EDA</li>
+                      <li><i class="bi bi-check2-circle"></i> ETL - collecte & nettoyage</li>
                     </ul>
                   </div>
                   <div class="col-md-6">
                     <ul class="feature-list">
-                      <li><i class="bi bi-check2-circle"></i> Modèles prédictifs (ML)</li>
-                      <li><i class="bi bi-check2-circle"></i> Suivi des expériences (MLflow)</li>
-                      <li><i class="bi bi-check2-circle"></i> Manipulation distribuée avec PySpark</li>
+                      <li><i class="bi bi-check2-circle"></i> Plotly / Seaborn - visualisations</li>
+                      <li><i class="bi bi-check2-circle"></i> Scikit-learn - régression & ML</li>
+                      <li><i class="bi bi-check2-circle"></i> Time Series - ARIMA / Prophet / LSTM</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
               <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
-                <a href="https://tabodino.github.io/hotel_booking_cancellation_prediction/" class="btn-view-project"
+                <a href="https://tabodino-compagnon-immo-srcstreamlitapp-aqmvu5.streamlit.app/" class="btn-view-project"
                   target="_blank">Démo
                   <i class="bi bi-box-arrow-up-right"></i></a>
-                <a href="https://github.com/tabodino/hotel_booking_cancellation_prediction/" class="btn-next-project"
-                  target="_blank">Voir
+                <a href="https://raw.githubusercontent.com/tabodino/compagnon_immo/main/reports/Rapport%20final%20-%20Compagnon%20immobilier%20-%20v1.pdf"
+                  class="btn-view-project" target="_blank">Voir le rapport
+                  <i class="bi bi-eye"></i></a>
+                <a href="https://github.com/tabodino/compagnon_immo/" class="btn-next-project" target="_blank">Voir
                   le repository<i class="bi bi-github"></i></a>
               </div>
             </div>
