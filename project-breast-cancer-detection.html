@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Project - Breast Cancer Detection</title>
+  <meta name="description"
+    content="Breast Cancer Detection is a deep learning project aimed at early detection of breast cancer from medical images. Uses convolutional architectures to support diagnosis.">
+  <meta name="keywords"
+    content="deep learning, breast cancer, medical imaging, CNN, detection, healthcare, Python, TensorFlow, PyTorch, data science">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center"></a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Project Breast Cancer Detection</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index_en.html">Home</a></li>
+            <li class="current">Project Breast Cancer Detection</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- Language Switcher -->
+      <div class="dropdown language-switcher ms-auto">
+        <button class="btn btn-light dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown"
+          aria-expanded="false" aria-label="Choisir la langue / Choose language">
+          <span class="me-1">
+            <img src="https://flagcdn.com/gb.svg" width="24" alt="English">
+          </span>
+          <span>EN</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="project-breast-cancer-detection.html">
+              <img src="https://flagcdn.com/gb.svg" width="24" alt="English" class="me-2"> English
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="projet-breast-cancer-detection.html">
+              <img src="https://flagcdn.com/fr.svg" width="24" alt="Français" class="me-2"> Français
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End language switcher -->
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="portfolio-details-media">
+              <div class="main-image">
+                <div class="portfolio-details-slider swiper init-swiper" data-aos="zoom-in">
+                  <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 1000,
+                      "autoplay": {
+                        "delay": 6000
+                      },
+                      "effect": "creative",
+                      "creativeEffect": {
+                        "prev": {
+                          "shadow": true,
+                          "translate": [0, 0, -400]
+                        },
+                        "next": {
+                          "translate": ["100%", 0, 0]
+                        }
+                      },
+                      "slidesPerView": 1,
+                      "navigation": {
+                        "nextEl": ".swiper-button-next",
+                        "prevEl": ".swiper-button-prev"
+                      }
+                    }
+                  </script>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/breast-cancer-detection.webp" alt="Portfolio Image"
+                        class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/breast-cancer-prediction.webp" alt="Portfolio Image"
+                        class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/breast-cancer-image-analysis.webp" alt="Portfolio Image"
+                        class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/breast-cancer-mlflow-history.webp" alt="Portfolio Image"
+                        class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+              <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="row g-2 mt-3">
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/breast-cancer-detection.webp" alt="App Screenshot Image"
+                      class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/breast-cancer-prediction.webp" alt="Prediction"
+                      class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/breast-cancer-image-analysis.webp" alt="Image Analysis"
+                      class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/breast-cancer-mlflow-history.webp" alt="MLflow History"
+                      class="img-fluid glightbox">
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
+                <span>Python</span>
+                <span>Deep Learning</span>
+                <span>DVC</span>
+                <span>MLflow</span>
+                <span>FastAPI</span>
+                <span>Streamlit</span>
+                <span>Tensorflow</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="portfolio-details-content">
+              <div class="project-meta">
+                <div class="badge-wrapper">
+                  <span class="project-badge">Deep Learning</span>
+                </div>
+                <div class="date-client">
+                  <div class="meta-item">
+                    <i class="bi bi-calendar-check"></i>
+                    <span>November 2025</span>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="project-title">Breast Cancer Detection</h2>
+
+              <div class="project-website">
+                <i class="bi bi-link-45deg"></i>
+                <a href="https://breast-cancer-detection-20251130.streamlit.app/" target="_blank">Live demo</a>
+              </div>
+
+              <div class="project-overview">
+                <p class="lead">
+                  The <strong>Breast Cancer Detection</strong> project is based on a modern and modular architecture,
+                  designed to apply <strong>deep learning</strong> techniques to medical imaging.
+                  The application integrates a complete pipeline from data preparation to production,
+                  with particular attention paid to reproducibility and experiment tracking.
+                </p>
+                <p class="lead">
+                  Architecture
+                <ul class="lead">
+                  <li><strong>Models:</strong> multiple architectures tested (EfficientNet B3, ResNet50, MobileNet V3,
+                    U-Net).</li>
+                  <li><strong>MLflow:</strong> experiment tracking, model versioning, and artifact management.</li>
+                  <li><strong>DVC:</strong> data and model management to ensure traceability and reproducibility.</li>
+                  <li><strong>Streamlit:</strong> professional web interface for predictions.</li>
+                  <li><strong>FastAPI:</strong> REST server for deployment and model serving.</li>
+                  <li><strong>Docker:</strong> full containerization to facilitate orchestration and deployment.</li>
+                </ul>
+                </p>
+
+                <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
+                  <div class="accordion-item" data-aos="fade-up">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#portfolio-details-collapse-1" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="bi bi-clipboard-data me-2"></i> Project Overview
+                      </button>
+                    </h2>
+                    <div id="portfolio-details-collapse-1" class="accordion-collapse collapse show"
+                      data-bs-parent="#portfolio-details-projectAccordion">
+                      <div class="accordion-body">
+                        <p class="lead">
+                          The goal of this project is to develop a <strong>deep learning</strong> solution
+                          capable of analyzing <strong>medical images</strong> and predicting the presence of breast
+                          cancer.
+                          This project illustrates the application of <strong>artificial intelligence</strong>
+                          techniques
+                          to the healthcare domain, with a focus on <strong>medical imaging</strong>.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#portfolio-details-collapse-2" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        <i class="bi bi-exclamation-diamond me-2"></i> The Challenge
+                      </button>
+                    </h2>
+                    <div id="portfolio-details-collapse-2" class="accordion-collapse collapse"
+                      data-bs-parent="#portfolio-details-projectAccordion">
+                      <div class="accordion-body">
+                        <p class="lead">
+                          Early detection of breast cancer is a major public health challenge.
+                          Medical images are complex, heterogeneous, and require reliable <strong>automated
+                            analysis</strong> to assist practitioners.
+                          The challenge is to <strong>train robust models</strong> capable of distinguishing relevant
+                          signals in the images,
+                          while managing data variability and avoiding overfitting.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#portfolio-details-collapse-3" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        <i class="bi bi-award me-2"></i> The Solution
+                      </button>
+                    </h2>
+                    <div id="portfolio-details-collapse-3" class="accordion-collapse collapse"
+                      data-bs-parent="#portfolio-details-projectAccordion">
+                      <div class="accordion-body">
+                        <p class="lead">
+                          The solution relies on a <strong>Streamlit</strong> interface that allows users
+                          to select the deep learning model they want to test (among several architectures such as
+                          EfficientNet, ResNet, or MobileNet).
+                          Once the model is chosen, the application provides the ability to upload a medical image and
+                          obtain an immediate prediction of the presence or absence of cancer.
+                          The interface goes beyond prediction: it also displays <strong>performance metrics</strong>
+                          (accuracy, recall, AUC),
+                          the <strong>experiment history</strong> tracked via MLflow and DVC.
+                          This integrated approach turns the project into a truly interactive tool, combining
+                          <strong>prediction, evaluation, and tracking</strong>, making detection more transparent and
+                          reproducible.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-features" data-aos="fade-up" data-aos-delay="300">
+                <h3><i class="bi bi-stars"></i> Key Features</h3>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <ul class="feature-list">
+                      <li><i class="bi bi-check2-circle"></i> CNN - image classification</li>
+                      <li><i class="bi bi-check2-circle"></i> TensorFlow - Deep Learning</li>
+                      <li><i class="bi bi-check2-circle"></i> Streamlit - user interface</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="feature-list">
+                      <li><i class="bi bi-check2-circle"></i> MLflow - experiment tracking</li>
+                      <li><i class="bi bi-check2-circle"></i> DVC - data & model management</li>
+                      <li><i class="bi bi-check2-circle"></i> FastAPI - REST API for serving</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://breast-cancer-detection-20251130.streamlit.app/" class="btn-view-project"
+                  target="_blank">Live Demo
+                  <i class="bi bi-box-arrow-up-right"></i></a>
+                <a href="https://github.com/tabodino/breast-cancer-detection/" class="btn-next-project"
+                  target="_blank">See on GitHub<i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span>- All rights reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/jean-michel-lievin-247591143/"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/tabodino/"><i class="bi bi-github"></i></a>
+        <a href="https://medium.com/@tabodino"><i class="bi bi-medium"></i></a>
+        <a href="mailto:jeanmichel.liev1@gmail.com"><i class="bi bi-google"></i></a>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
