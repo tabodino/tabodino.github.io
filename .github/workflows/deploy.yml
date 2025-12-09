@@ -1,0 +1,84 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install --save-dev html-minifier-terser clean-css-cli terser
+
+      - name: Create build directory
+        run: |
+          mkdir -p dist
+          cp -r assets dist/
+          find . -maxdepth 1 -name "*.html" -exec cp {} dist/ \;
+          [ -d forms ] && cp -r forms dist/ || true
+          [ -f favicon.ico ] && cp favicon.ico dist/ || true
+          [ -f CNAME ] && cp CNAME dist/ || true
+          [ -f README.md ] && cp README.md dist/ || true
+
+      - name: Minify custom CSS
+        run: |
+          find dist/assets/css -name "*.css" ! -name "*.min.css" -type f | while read file; do
+            npx clean-css-cli -o "$file" "$file" && echo "✓ CSS: $file" || echo "⚠ Failed: $file"
+          done
+
+      - name: Minify custom JS
+        run: |
+          find dist/assets/js -name "*.js" ! -name "*.min.js" -type f | while read file; do
+            npx terser "$file" -o "$file" --compress --mangle && echo "✓ JS: $file" || echo "⚠ Failed: $file"
+          done
+
+      - name: Minify HTML
+        run: |
+          find dist -name "*.html" -type f | while read file; do
+            npx html-minifier-terser \
+              --collapse-whitespace \
+              --remove-comments \
+              --remove-redundant-attributes \
+              --minify-css true \
+              --minify-js true \
+              -o "$file" "$file" && echo "✓ HTML: $file" || echo "⚠ Failed: $file"
+          done
+
+      - name: Verify build
+        run: |
+          echo "Build verification:"
+          ls -lah dist/
+          [ -f "dist/index.html" ] && echo "index.html existe" || (echo "index.html manquant" && exit 1)
+          [ -d "dist/assets" ] && echo "assets/ existe" || (echo "assets/ manquant" && exit 1)
+          echo "Build validé"
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: false
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "Deploy ${{ github.sha }}"
+
+      - name: Upload artifact (backup)
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-backup
+          path: dist/
+          retention-days: 7
